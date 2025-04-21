@@ -1,0 +1,12 @@
+workflows:
+  android-build:
+    name: Build Android App
+    environment:
+      android:
+        image: android-stable
+      vars:
+        PACKAGE_NAME: "com.kambiz.kamrobot"  # اگه پکیجت چیز دیگه‌ایه اصلاحش کن
+    scripts:
+      - ./gradlew assembleRelease
+    artifacts:
+      - app/build/outputs/**/*.apk
