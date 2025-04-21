@@ -8,12 +8,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Kam Robot'),
-        centerTitle: true,
       ),
       body: const Center(
         child: Text(
-          'Welcome to Kam Robot!',
-          style: TextStyle(fontSize: 24),
+          'خوش آمدید به Kam Robot!',
+          style: TextStyle(fontSize: 20),
         ),
       ),
     );
