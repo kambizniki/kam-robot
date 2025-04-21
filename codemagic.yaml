@@ -5,8 +5,8 @@ workflows:
       android:
         image: android-stable
       vars:
-        PACKAGE_NAME: "com.kambiz.kamrobot"  # اگه پکیجت چیز دیگه‌ایه اصلاحش کن
+        PACKAGE_NAME: "com.kambiz.kamrobot"
     scripts:
       - ./gradlew assembleRelease
     artifacts:
-      - app/build/outputs/**/*.apk
+      - build/app/outputs/flutter-apk/app-release.apk
