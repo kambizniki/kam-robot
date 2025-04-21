@@ -2,11 +2,11 @@ workflows:
   android-build:
     name: Build Android App
     environment:
-      android:
-        image: android-stable
+      flutter: stable
       vars:
         PACKAGE_NAME: "com.kambiz.kamrobot"
     scripts:
-      - ./gradlew assembleRelease
+      - name: Build APK
+        script: flutter build apk --release
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
